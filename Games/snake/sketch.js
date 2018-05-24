@@ -5,7 +5,8 @@ function setup() {
 	createCanvas(600,600);
 	s = new Snake();
 	frameRate(10);
-	pickLocation(); 
+	pickLocation();
+	check_length(s.length);
 }
 function pickLocation()
 {
