@@ -7,7 +7,12 @@ function Snake()
 	this.yspeed=0;
 	this.total=0;
 	this.tail=[];
-
+	this.sp_ded=0
+	this.check_length = funcion(snake_len){
+	if(this.tail.length%5==0&&this.sp_ded==snake_len)){
+		this.speed*=1.05;
+		this.sp_ded+=5
+	}
 	this.death = function()
 	{
 		for(var i=0;i<this.tail.length;i++)
